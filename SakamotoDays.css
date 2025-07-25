@@ -17,11 +17,11 @@
     left: 0;
     width:100%;
     height: 100vh;
-    background: url('ClassroomOfTheElite\ I\ background.jpg');
+    background: url('SakamotoDaysBg.jpg');
     background-size: cover;
     /* filter: blur(1px); */
     z-index: -5;
-    filter: brightness(30%);
+    filter: brightness(40%);
 }
 
 /* Content Container */
@@ -33,7 +33,7 @@
 
 /* Anime Information */
 .anime-info {
-    /* display: flex; */
+    /* display: flex; */ 
     align-items: flex-start;
     /* gap: 20px; */
     background: rgba(0, 0, 0, 0.4);
@@ -43,6 +43,9 @@
     max-width: 100%;
 }
 
+.context{
+    width: 100%;
+}
 /* Anime Poster */
 .anime-poster {
     width: 200px;
@@ -51,7 +54,7 @@
 
 /* Text Section */
 .text {
-    max-width: 700px;
+    /* max-width: 700px; */
     font-size: 1.2em;
 }
 
@@ -69,6 +72,7 @@
 .text p{
     font-size: smaller;
 }
+
 
 
 .bg-video {
@@ -238,6 +242,7 @@ header{
     text-transform: uppercase;
     border-bottom: 1px solid var(--main-color);   
 }
+
 .movies-container{
     max-width: 960px;
     margin-right: auto;
@@ -246,6 +251,8 @@ header{
     grid-template-columns: repeat(auto-fit,minmax(180px,auto));
     gap: 1rem;
     margin-top: 2rem;
+    align-items: center;
+    text-align: justify;
 }
 .box{
     animation-name: scroll;
@@ -256,6 +263,7 @@ header{
 .box .box-img{
     width: 100%;
     height: 270px;
+
 }
 .box .box-img img{
     width: 100%;
@@ -266,8 +274,9 @@ header{
 .box .box-img img:hover{
     transform: translateY(-10px);
     transition: 0.2s all linear;
-    border-color: rgb(14, 72green, 233);
+    border-color: rgb(14, 72, 233);
     border-style: solid;
+
 }
 .box h3{
     font-size: 0.9rem;
@@ -354,8 +363,7 @@ header{
         opacity:1;
         scale:1;
     }
-}
-
+} 
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Stack items vertically */
@@ -384,6 +392,5 @@ header{
     }
     
 }
-
 
 
